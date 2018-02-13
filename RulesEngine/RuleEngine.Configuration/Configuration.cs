@@ -9,6 +9,6 @@ namespace RuleEngine
 
     public class Configuration : IConfiguration
     {
-        public string DatabasePath { get; set; }
+        public string DatabasePath { get; set; } = "database.db";
     }
 }

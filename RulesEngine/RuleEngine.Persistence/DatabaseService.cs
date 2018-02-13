@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RuleEngine.Persistence
+namespace RuleEngine.Database
 {
-    public class PersistenceService
+    public class DatabaseService
     {
         private IConfiguration _configuration;
-        private PersistenceContext _context;
+        private DatabaseContext _context;
 
-        public PersistenceService()
+        public DatabaseService()
             : this(new Configuration())
         {
             // empty
         }
 
-        public PersistenceService(IConfiguration configuration)
+        public DatabaseService(IConfiguration configuration)
         {
             _configuration = configuration;
             CreateContext();
@@ -25,7 +25,7 @@ namespace RuleEngine.Persistence
 
         private void CreateContext()
         {
-            _context = new PersistenceContext(_configuration.DatabasePath);
+            _context = new DatabaseContext(_configuration.DatabasePath);
             _context.Database.EnsureCreated();
         }
 

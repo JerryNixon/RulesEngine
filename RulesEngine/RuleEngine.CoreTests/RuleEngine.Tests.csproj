@@ -14,8 +14,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RuleEngine.Configuration\RuleEngine.Configuration.csproj" />
+    <ProjectReference Include="..\RuleEngine.MessageQueue\RuleEngine.Queue.csproj" />
     <ProjectReference Include="..\RuleEngine.Models\RuleEngine.Models.csproj" />
-    <ProjectReference Include="..\RuleEngine.Persistence\RuleEngine.Persistence.csproj" />
+    <ProjectReference Include="..\RuleEngine.Persistence\RuleEngine.Database.csproj" />
     <ProjectReference Include="..\RuleEngine.Tests\RuleEngine.OldTests.csproj" />
   </ItemGroup>
 

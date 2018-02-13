@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RuleEngine.Models;
 
-namespace RuleEngine.Persistence
+namespace RuleEngine.Database
 {
-    public class PersistenceContext : DbContext
+    internal class DatabaseContext : DbContext
     {
         private string _path;
 
         public DbSet<Record> Records { get; set; }
 
-        public PersistenceContext(string path)
+        public DatabaseContext(string path)
         {
             _path = path;
         }

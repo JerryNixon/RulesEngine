@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MessageService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RuleEngine.Configuration\RuleEngine.Configuration.csproj" />
+    <ProjectReference Include="..\RuleEngine.Models\RuleEngine.Models.csproj" />
+  </ItemGroup>
+
+</Project>
